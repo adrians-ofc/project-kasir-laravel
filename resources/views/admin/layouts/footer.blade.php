@@ -16,7 +16,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong></strong>&COPY; Setubruk Coffee, <a href="https://www.instagram.com/adriaann.bg?igsh=MWlndmhiZ3dsNGwyMw==">Adrian Syahputra | XII RPL 1</a> 2023 All rights reserved.
   </footer>
 
 </div>
@@ -25,9 +25,12 @@
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="vendor/admin/plugins/jquery/jquery.min.js"></script>
+<script src="/vendor/admin/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="vendor/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="vendor/admin/dist/js/adminlte.min.js"></script>
+<script src="/vendor/admin/dist/js/adminlte.min.js"></script>
+
+<!-- Custom Javascript -->
+<script src="/resources/js/javascript.js"></script>
 </body>

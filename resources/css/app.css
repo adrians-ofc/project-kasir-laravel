@@ -1,0 +1,15 @@
+.nav-link.active svg {
+    transform: scale(0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-green-bg {
+    background-color: #235362;
+    color: #fff;
+}
+
+.btn-main-green-bg {
+    color: #fff;
+    background-color: #235362;
+}
+
