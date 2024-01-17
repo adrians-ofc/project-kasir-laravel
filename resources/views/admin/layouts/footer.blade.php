@@ -16,7 +16,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong></strong>&COPY; Setubruk Coffee, <a href="https://www.instagram.com/adriaann.bg?igsh=MWlndmhiZ3dsNGwyMw==">Adrian Syahputra | XII RPL 1</a> 2023 All rights reserved.
+    <strong></strong>&COPY; Setubruk Coffee, <a href="https://www.instagram.com/adriaann.bg?igsh=MWlndmhiZ3dsNGwyMw==" style="color: #427484; font-weight: bold;">Adrian Syahputra | XII RPL 1</a> 2023 All rights reserved.
   </footer>
 
 </div>
@@ -33,4 +33,10 @@
 
 <!-- Custom Javascript -->
 <script src="/resources/js/javascript.js"></script>
+
+<script>
+  setTimeout(function(){
+    document.getElementById('alert').style.display = 'none';
+}, 3000); // Mengatur waktu tampilan alert dalam milidetik (3000 milidetik = 3 detik)
+</script>
 </body>
