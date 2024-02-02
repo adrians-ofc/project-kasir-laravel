@@ -1,0 +1,274 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link.active svg {
+    transform: scale(0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-green-bg {
+    background-color: #003C2A;
+    color: #fff;
+}
+
+.btn-main-green-bg {
+    color: #dfdfdf;
+    background-color: #0f5641;
+}
+
+.btn-main-green-bg:hover {
+    color: #dfdfdf;
+    background-color: #003C2A;
+}
+
+.btn-main-green-bg:hover {
+    color: #fff;
+}
+
+.active-green {
+    background-color: #1A5040;
+    color: #fff;
+}
+
+.green-link {
+ color: #003C2A;
+ text-decoration: none;
+}
+
+.head-dashboard {
+    width: 100%;
+    height: 87vh;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 60%), url('/vendor/admin/dist/img/bg-dashboard.jpg');
+    background-size: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-position: center; /* Warna teks putih agar terlihat di atas gambar */
+    display: flex;     justify-content: center;
+    flex-direction: column;
+}
+
+.head-content-ct {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head-kategori {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3) 70%), url('/vendor/admin/dist/img/bg-kategori.jpg');
+    background-size: cover;
+    background-position: center; /* Warna teks putih agar terlihat di atas gambar */
+}
+
+.head-user {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3) 70%), url('/vendor/admin/dist/img/bg-user.jpg');
+    background-size: cover;
+    background-position: center; /* Warna teks putih agar terlihat di atas gambar */
+}
+
+.head-produk {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3) 70%), url('/vendor/admin/dist/img/bg-produk.jpg');
+    background-size: cover;
+    background-position: center; /* Warna teks putih agar terlihat di atas gambar */
+}
+
+.head-setting {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3) 70%), url('/vendor/admin/dist/img/bg-setting.jpg');
+    background-size: cover;
+    background-position: center; /* Warna teks putih agar terlihat di atas gambar */
+}
+
+.head-transaksi {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.3) 70%), url('/vendor/admin/dist/img/bg-transaksi.jpg');
+    background-size: cover;
+    background-position: center; /* Warna teks putih agar terlihat di atas gambar */
+}
+
+.sign-out:hover {
+    color: red;
+}
+
+.log-out-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Memusatkan secara vertikal */
+    justify-content: left; /* Memusatkan secara horizontal */
+    max-width: 300px; /* Atur lebar maksimal */
+}
+
+.log-out-btn a {
+    color: black;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    display: flex;
+    align-items: center; /* Memusatkan ikon dan teks secara vertikal */
+}
+
+.log-out-btn a:hover {
+    color: red;
+}
+
+.log-out-btn i {
+    margin-right: 5px; /* Memberikan margin kanan pada ikon */
+}
+
+.developer-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Memusatkan secara vertikal */
+    justify-content: left; /* Memusatkan secara horizontal */
+    max-width: 300px; /* Atur lebar maksimal */
+}
+
+.btn-secondary:hover {
+    background-color: #7c7c7c;
+}
+
+.developer-btn a {
+    color: rgb(107, 107, 107);
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    display: flex;
+    align-items: center; /* Memusatkan ikon dan teks secara vertikal */
+}
+
+.developer-btn a:hover {
+    color: #003C2A;
+}
+
+.developer-btn i {
+    margin-right: 5px; /* Memberikan margin kanan pada ikon */
+}
+
+.id-card-section {
+    width: 300px;
+    height: auto;
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #ffffff; /* Latar belakang putih */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 10px solid #003C2A;
+}
+
+/* id-card-bg */
+
+
+.title-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.title-section img {
+    width: 25%;
+}
+
+.title-section h2 {
+    font-weight: bold;
+    color: #003C2A;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px; /* Tambahkan margin di atas description jika perlu */
+}
+
+.qr-code-section {
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-light {
+    font-weight: light;
+}
+
+.white-bg {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Pagination atau Paginasi atau Halaman/tampilan lanjutan */
+
+.pagination .page-item:not(.disabled) .page-link {
+    color: #003C2A; /* Warna teks */
+    background-color: #fff; /* Warna latar belakang */
+    border-color: #fff; /* Warna border */
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #003C2A; /* Warna latar belakang untuk halaman aktif */
+    border-color: #003C2A; /* Warna border untuk halaman aktif */
+}
+
+
+
+
+
+
+
+
+/* Gaya untuk layar yang lebih kecil (misalnya, tablet dan ponsel) */
+/* @media only screen and (max-width: 768px) {
+    .id-card-section {
+        width: 90%;
+    }
+    .id-card-desc-section {
+        width: auto;
+    }
+    .description {
+        width: 80%;
+    }
+    .title-section {
+        width: auto;
+    }
+    .title-section img {
+        width: 200px;
+    }
+  } */
+  
+  /* Gaya untuk layar yang sedang (misalnya, laptop) */
+  /* @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .id-card-section {
+        width: 60%;
+    }
+    .id-card-desc-section {
+        width: auto;
+    }
+    .description {
+        width: 80%;
+    }
+    .title-section {
+        width: auto;
+    }
+    .title-section img {
+        width: 180px;
+    }
+  } */
+  
+  /* Gaya untuk layar yang lebih besar (misalnya, desktop) */
+  /* @media only screen and (min-width: 1201px) {
+    .id-card-section {
+        width: 60%;
+    }
+    .id-card-desc-section {
+        width: auto;
+    }
+    .description {
+        width: 80%;
+    }
+    .title-section {
+        width: auto;
+    }
+    .title-section img {
+        width: 180px;
+    }
+  } */

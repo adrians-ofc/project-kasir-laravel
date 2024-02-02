@@ -4,17 +4,23 @@
 }
 
 .main-green-bg {
-    background-color: #235362;
-    color: #fff;
+    background-color: #003C2A;
 }
 
 .btn-main-green-bg {
     color: #fff;
-    background-color: #235362;
+    background-color: #003C2A;
 }
 
 .green-link {
- color: #235362;
+ color: #003C2A;
  text-decoration: none;
 }
 
+.id-card-section {
+    width: 700px;
+}
+
+.title-section img {
+    width: 10px;
+}

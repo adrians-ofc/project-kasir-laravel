@@ -1,0 +1,5 @@
+@include('kasir.layouts.head')
+@include('kasir.layouts.header')
+@include('kasir.layouts.sidebar')
+@include('kasir.layouts.content')
+@include('kasir.layouts.footer')

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminUserController extends Controller
 {
@@ -17,6 +18,7 @@ class AdminUserController extends Controller
     {
         //
         $data = [
+            'title' => 'Manajemen User',
             'user' => User::get(),
             'content' => 'admin.user.index'
         ];
@@ -49,6 +51,7 @@ class AdminUserController extends Controller
         $data = $request->validate([
             'name'=> 'required',
             'email'=> 'required|email|unique:users',
+            'position'=> 'required',
             'password'=> 'required',
             're_password'=> 'required|same:password',
         ]);
@@ -56,7 +59,8 @@ class AdminUserController extends Controller
         $data['password'] = Hash::make($data['password']);
 
         User::create($data);
-        return redirect('/admin/user')->with('success', 'Data Berhasil Diedit');
+        Alert::success('Sukses', 'Data Berhasil Ditambahkan');
+        return redirect('/admin/user')->with('success', 'Data Berhasil Ditambahkan');
     }
 
     /**
@@ -73,17 +77,10 @@ class AdminUserController extends Controller
     public function showIdCard($id)
     {
         //
-        $user = User::find($id);
-
-        if (!$user) {
-            abort(404); // Atau Anda bisa menangani ini dengan cara lain, sesuai kebutuhan aplikasi Anda.
-        }
-
         $data = [
-            'user' => $user,
-            'content' => 'admin.user.id-card'
+            'user' => User::find($id),
+            'content' => 'admin.user.idcard'
         ];
-
         return view('admin.layouts.wrapper', $data);
     }
 
@@ -117,6 +114,7 @@ class AdminUserController extends Controller
         $data = $request->validate([
             'name'=> 'required',
             'email'=> 'required|email|unique:users,email,'.$user->id,
+            'position'=> 'required',
             // 'password'=> 'required',
             're_password'=> 'same:password',
         ]);
@@ -128,6 +126,7 @@ class AdminUserController extends Controller
         }
 
         $user->update($data);
+        Alert::success('Sukses', 'Data Berhasil Diedit');
         return redirect('/admin/user')->with('success', 'Data Berhasil Diedit');
     }
 
@@ -142,6 +141,7 @@ class AdminUserController extends Controller
         //
         $user = User::find($id);
         $user->delete();
+        Alert::success('Sukses', 'Data Berhasil Dihapus');
         return redirect('/admin/user')->with('success', 'Data Berhasil Dihapus');
     }
 }
